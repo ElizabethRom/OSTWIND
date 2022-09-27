@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Mono:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.promo_inner .promo_title h1 {
+  font-size: 52px;
+  font-family: "Roboto Mono";
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: rgb(244, 242, 239);
+}
+
+.promo_inner .promo_title h2 {
+  font-size: 32px;
+  font-family: "Roboto Mono";
+  color: rgb(244, 242, 239);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(239, 239, 239);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: rgb(30, 25, 19);
+}
+.container h3 {
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  color: rgb(30, 25, 19);
+  text-align: center;
+  margin: 40px 0px;
+}
+.container h4 {
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: rgb(30, 25, 19);
+  text-align: center;
+  margin: 20px 0px;
+}
+.container p {
+  font-family: "PT Sans";
+  font-size: 14px;
+  color: rgb(30, 25, 19);
+}
+.container .line {
+  border-bottom: 2px solid rgb(30, 25, 19);
+  width: 70%;
+  margin: 4% 15% 0% 15%;
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 85px;
+  background-color: rgb(239, 239, 239);
+}
+.header .logo {
+  margin: 10px 0 0 100px;
+  width: 79px;
+  height: 60px;
+}
+.header .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .nav {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 100%;
+}
+.header .nav li a {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(30, 25, 19);
+  list-style-type: none;
+}
+.header .nav .nav_item {
+  display: flex;
+  justify-content: end;
+  margin: -20px 100px 0 0;
+}
+.header .nav .nav_item li {
+  padding-right: 40px;
+}
+.header .nav .nav_item2 {
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  margin: -60px 60px 0 0;
+}
+.header .nav .nav_item2 li {
+  padding: 0 0 10px 30px;
+}
+.header .nav .nav_item2 li select {
+  background: none;
+}
+
+.promo {
+  width: 100vw;
+  height: 90vh;
+  background: url(../img/fonov.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.promo_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.promo_inner .promo_title {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  color: rgb(244, 242, 239);
+  padding-top: 25vh;
+  justify-content: center;
+}
+.promo_inner .promo_title h1 {
+  padding-top: 20px;
+}
+.promo_inner .promo_title h2 {
+  padding-top: 20px;
+}
+.promo_inner .broni {
+  width: 920px;
+  background-color: rgb(239, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(155px);
+  height: 110px;
+}
+.promo_inner .broni div {
+  height: 80px;
+  margin: 0 10px;
+  border: 1px solid rgb(64, 63, 60);
+  background: rgb(226, 223, 223);
+  width: 200px;
+}
+.promo_inner .broni div:last-child {
+  border: none;
+  width: 230px;
+  background: rgb(195, 171, 122);
+}
+.promo_inner .broni .broni_item::after {
+  content: "";
+  background-image: url("../img/calendar-svgrepo-com 1.svg");
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  top: 25px;
+  left: 160px;
+}
+.promo_inner .broni .broni_item2::after {
+  content: "";
+  background: url("../img/person-add-svgrepo-com (1) 1.svg") 0 0/cover no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  top: 25px;
+  left: 160px;
+}
+.promo_inner .broni .broni_btn a {
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(244, 242, 239);
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.promo_inner .broni .broni_btn a:hover {
+  background: rgb(136, 118, 83);
+}
+
+.about_hotel {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.about_hotel p {
+  padding-bottom: 10px;
+}
+.about_hotel button {
+  border: 1px solid rgb(30, 25, 19);
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(30, 25, 19);
+}
+.about_hotel .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+.about_hotel .gallery .prev {
+  cursor: pointer;
+  position: absolute;
+  left: 120px;
+  z-index: 800;
+}
+.about_hotel .gallery .prev:hover {
+  box-shadow: 0px 0px 10px 5px rgb(195, 171, 122);
+  border-radius: 50%;
+}
+.about_hotel .gallery .next {
+  cursor: pointer;
+  position: absolute;
+  left: 1350px;
+  z-index: 800;
+}
+.about_hotel .gallery .next:hover {
+  box-shadow: 0px 0px 10px 5px rgb(195, 171, 122);
+  border-radius: 50%;
+}
+
+.advantges_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.advantges_inner img {
+  width: 80px;
+  height: 80px;
+}
+.advantges_inner div {
+  display: block;
+  width: 20%;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.room {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.room .room_btn {
+  width: 205px;
+  height: 40px;
+  border: 1px solid rgb(30, 25, 19);
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+.room .room_btn a {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(30, 25, 19);
+}
+.room .gallery_room {
+  display: flex;
+}
+.room .gallery_room .card_room {
+  position: relative;
+}
+.room .gallery_room .card_room:nth-child(2) {
+  margin: 0 90px;
+}
+.room .gallery_room .card_room .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  left: 370px;
+  z-index: 800;
+}
+.room .gallery_room .card_room .next2:hover {
+  box-shadow: 0px 0px 10px 5px rgb(195, 171, 122);
+  border-radius: 50%;
+}
+.room .gallery_room .card_room .card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 170px;
+  background-color: rgba(244, 242, 239, 0.7);
+  z-index: 600;
+  position: absolute;
+  top: 280px;
+  left: 75px;
+}
+.room .gallery_room .card_room .card_info button {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(195, 171, 122);
+}
+.room .gallery_room .card_room .card_info button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(244, 242, 239);
+  padding: 10px 0;
+}
+.room .gallery_room .card_room .card_info button:hover {
+  background: rgb(136, 118, 83);
+}
+
+.gallery_service {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 366px 319px 366px;
+  grid-template-rows: 230px 230px 230px;
+  gap: 15px;
+}
+.gallery_service .card_service {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery_service .card_service:first-child {
+  grid-column: span 2;
+}
+.gallery_service .card_service:nth-child(4) {
+  grid-column: span 2;
+}
+.gallery_service .card_service:nth-child(5) {
+  grid-column: span 2;
+}
+.gallery_service .card_service .img_scale {
+  overflow: hidden;
+}
+.gallery_service .card_service .img_scale img {
+  display: block;
+  filter: brightness(80%);
+  transition: 2s;
+}
+.gallery_service .card_service .img_scale img:hover {
+  transform: scale(1.2);
+}
+.gallery_service .card_service .card_service_info {
+  z-index: 900;
+  position: absolute;
+  text-align: center;
+}
+.gallery_service .card_service .card_service_info h4 {
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  color: rgb(244, 242, 239);
+  text-align: center;
+  margin: 20px 0px;
+}
+.gallery_service .card_service .card_service_info p {
+  font-family: "PT Sans";
+  font-size: 16px;
+  color: rgb(244, 242, 239);
+  margin-bottom: 10px;
+}
+
+.container_map {
+  padding-bottom: 50px;
+}
+.container_map .map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_map .map .card_map {
+  width: 600px;
+  height: 280px;
+}
+.container_map .map .card_map img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container_map .map .map_txt {
+  margin-left: 30px;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  color: rgb(30, 25, 19);
+}
+
+.container_footer {
+  padding: 30px 0;
+  background-color: rgb(64, 63, 60);
+}
+.container_footer .nav_footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(244, 242, 239);
+}
+.container_footer .nav_footer .logo {
+  margin-top: 50px;
+  width: 25%;
+}
+.container_footer .nav_footer .logo p {
+  padding-top: 5px;
+  font-family: "PT Sans";
+  font-size: 12px;
+  color: rgb(195, 171, 122);
+}
+.container_footer .nav_footer ul {
+  margin-bottom: 10px;
+  width: 25%;
+}
+.container_footer .nav_footer ul h5 {
+  padding-bottom: 20px;
+}
+.container_footer .nav_footer ul li {
+  padding-bottom: 10px;
+}
+.container_footer .nav_footer ul li a {
+  font-family: "PT Sans";
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(244, 242, 239);
+}
+.container_footer .nav_add {
+  display: flex;
+  justify-content: space-around;
+}
+.container_footer .nav_add .nav_link {
+  width: 25%;
+}
+.container_footer .nav_add .nav_link p {
+  text-align: center;
+}
+.container_footer .nav_add .nav_link p a {
+  font-family: "PT Sans";
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(244, 242, 239);
+}/*# sourceMappingURL=style.css.map */
