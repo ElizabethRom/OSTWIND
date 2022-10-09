@@ -173,7 +173,7 @@ html, body {
 }
 
 .promo {
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   background: url(../img/fonov.jpg);
   background-repeat: no-repeat;
@@ -208,7 +208,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(155px);
+  transform: translateY(145%);
   height: 110px;
 }
 .promo_inner .broni div {
@@ -278,6 +278,7 @@ html, body {
 }
 .about_hotel .gallery {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
@@ -286,7 +287,7 @@ html, body {
 .about_hotel .gallery .prev {
   cursor: pointer;
   position: absolute;
-  left: 120px;
+  left: 2%;
   z-index: 800;
 }
 .about_hotel .gallery .prev:hover {
@@ -296,7 +297,7 @@ html, body {
 .about_hotel .gallery .next {
   cursor: pointer;
   position: absolute;
-  left: 1350px;
+  left: 95%;
   z-index: 800;
 }
 .about_hotel .gallery .next:hover {
@@ -331,11 +332,8 @@ html, body {
   border: 1px solid rgb(30, 25, 19);
   padding: 10px 20px;
   margin-top: 50px;
-}
-.room .room_btn a {
   font-family: "Roboto Mono";
   font-size: 14px;
-  text-decoration: none;
   color: rgb(30, 25, 19);
 }
 .room .gallery_room {
@@ -376,15 +374,9 @@ html, body {
   width: 120px;
   height: 40px;
   background-color: rgb(195, 171, 122);
-}
-.room .gallery_room .card_room .card_info button a {
-  display: block;
-  width: 100%;
-  height: 100%;
   text-align: center;
   font-family: "Roboto Mono";
   font-size: 14px;
-  text-decoration: none;
   color: rgb(244, 242, 239);
   padding: 10px 0;
 }
@@ -497,11 +489,12 @@ html, body {
   margin-bottom: 10px;
   width: 25%;
 }
-.container_footer .nav_footer ul h5 {
-  padding-bottom: 20px;
-}
 .container_footer .nav_footer ul li {
   padding-bottom: 10px;
+}
+.container_footer .nav_footer ul li:first-child {
+  padding: 20px 0;
+  font-weight: bold;
 }
 .container_footer .nav_footer ul li a {
   font-family: "PT Sans";
@@ -524,4 +517,41 @@ html, body {
   font-size: 12px;
   text-decoration: none;
   color: rgb(244, 242, 239);
+}
+
+@media (max-width: 900px) {
+  .gallery_service {
+    grid-template-columns: 366px 366px;
+    grid-template-rows: 230px 230px;
+  }
+  .gallery_service .card_service:first-child {
+    grid-column: span 1;
+  }
+  .gallery_service .card_service:nth-child(4) {
+    grid-column: span 1;
+  }
+  .gallery_service .card_service:nth-child(5) {
+    grid-column: span 1;
+  }
+  .gallery_service .card_service .card_service_info {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 400px) {
+  .gallery_service {
+    grid-template-columns: 300px;
+    grid-template-rows: 150px;
+  }
+  .gallery_service .card_service:first-child {
+    grid-column: span 1;
+  }
+  .gallery_service .card_service:nth-child(4) {
+    grid-column: span 1;
+  }
+  .gallery_service .card_service:nth-child(5) {
+    grid-column: span 1;
+  }
+  .gallery_service .card_service .card_service_info {
+    padding: 0 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

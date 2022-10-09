@@ -104,19 +104,12 @@ html, body{
         
 }
 .promo{
-width: 100vw;
+width: 100%;
 height: 90vh;
 background: url(../img/fonov.jpg);
 background-repeat: no-repeat;
 background-position: 0 0;
 background-size: cover;
-    // .social{
-    // display: block;
-    // z-index: 1200;
-    // position: relative;
-    // top: 50%;
-    // left: 90%;
-    // }
 }
 .promo_inner{
     display: flex;
@@ -140,13 +133,20 @@ background-size: cover;
                 @extend %h2;
             }
     }
+    // .social{
+    //     display: block;
+    //     z-index: 1200;
+    //     position: relative;
+    //     top: -100px;
+    //     left: 70%;
+    // }
     .broni{
         width: 920px;
         background-color: rgba(239, 239, 239, 1);
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateY(155px);
+        transform: translateY(145%);
         height: 110px;
             div{
                 height: 80px;
@@ -211,6 +211,7 @@ background-size: cover;
     }
     .gallery{
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: space-between;
         margin-top: 20px;
@@ -218,7 +219,7 @@ background-size: cover;
         .prev {
             cursor: pointer;
             position: absolute;
-            left: 120px;
+            left: 2%;
             z-index: 800;
             &:hover{
                 box-shadow: 0px 0px 10px 5px $color_contrast;
@@ -228,7 +229,7 @@ background-size: cover;
         .next{
             cursor: pointer;
             position: absolute;
-            left: 1350px;
+            left: 95%;
             z-index: 800;
             &:hover{
                 box-shadow: 0px 0px 10px 5px $color_contrast;
@@ -263,9 +264,7 @@ background-size: cover;
         border: 1px solid $color_dark ;
         padding: 10px 20px;
         margin-top: 50px;
-            a{
-        @include a("Roboto Mono",14px,$color_dark);
-        }
+        @include txt("Roboto Mono",14px,$color_dark);
     }
     .gallery_room{
         display: flex;
@@ -302,18 +301,13 @@ background-size: cover;
                 width: 120px;
                 height: 40px;
                 background-color: $color_contrast;
-                    a{
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                    @include a("Roboto Mono",14px,$color_light);
-                    padding: 10px 0;
-                    }
+                text-align: center;
+                @include txt("Roboto Mono",14px,$color_light);
+                padding: 10px 0;
                     &:hover{
                         background: rgb(136, 118, 83);
                         }
-                    }
+                }
             }
 
         }
@@ -408,11 +402,12 @@ background-size: cover;
         ul{
             margin-bottom: 10px;
             width: 25%;
-            h5{
-                padding-bottom: 20px;
-            }
             li{
                 padding-bottom: 10px;
+                &:first-child{
+                    padding: 20px 0;
+                    font-weight: bold;
+                }
                  a{
                 @include a("PT Sans",12px,$color_light);
                  }
@@ -432,4 +427,44 @@ background-size: cover;
                 }
             }       
      }
+}
+@media (max-width: 900px){
+    .gallery_service{
+        grid-template-columns: 366px 366px;
+        grid-template-rows: 230px 230px;
+        .card_service{
+            &:first-child{
+            grid-column: span 1;
+            }
+            &:nth-child(4){
+            grid-column: span 1;
+            }
+            &:nth-child(5){
+            grid-column: span 1;
+            }
+            .card_service_info{
+                padding: 0 20px;
+            }
+    }
+}
+}
+@media (max-width: 400px){
+    .gallery_service{
+        grid-template-columns: 300px;
+        grid-template-rows: 150px;
+        .card_service{
+            &:first-child{
+            grid-column: span 1;
+            }
+            &:nth-child(4){
+            grid-column: span 1;
+            }
+            &:nth-child(5){
+            grid-column: span 1;
+            }
+            .card_service_info{
+                padding: 0 20px;
+            }
+    }
+}
 }
